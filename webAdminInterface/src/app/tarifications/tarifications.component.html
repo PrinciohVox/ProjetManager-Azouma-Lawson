@@ -1,0 +1,55 @@
+<ngx-spinner bdColor="rgba(0,0,0,0.3)" size = "medium" color = "#00c851" type = "square-jelly-box" [fullScreen] = "true"><p style="color: white" > Chargement en cours ... </p></ngx-spinner>
+<div class="container-fluid">
+  <app-breadcumb [path]="bread"></app-breadcumb>
+  <br><br>
+  <ng2-smart-table [settings]="settings" [source]="this.dataSource" (createConfirm)="_confirmCreate($event);" (deleteConfirm)="_confirmDelete($event)" (editConfirm)="_confirmUpdate($event)" (custom)="_customAction($event)"></ng2-smart-table>
+</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" id="imgModal" data-toggle="modal" data-target="#basicExampleModal" style="display: none;">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Paramètres de la cryptomonnaie</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+            <div class="row d-flex justify-content-around align-items-center">
+                  <div class="col-5">
+                      <input type="file" id="imageInput" (change)="handleInputImage($event)">
+                  </div>
+                  <div class="col-5">
+                    <button type="button" class="btn btn-outline-success" (click)="_uploadFIle()">Modifier l'image</button>
+                  </div>
+            </div>
+            <br><br>
+            <div class="row d-flex justify-content-around align-items-center">
+              <div class="col-5">
+                    <select id="" class="form-control" [(ngModel)]="destinationCode">
+                            <option value="0">Selectionnez</option>
+                            <option *ngFor="let item of dataSource" [value]="item.code"> {{ item.name }} </option>
+                    </select>
+              </div>
+              <div class="col-4">
+                    <input type="number" class="form-control" [(ngModel)]="newExhangeRate" placeholder="Taux de change ...">
+              </div>
+              <div class="col-auto">
+                      <button type="button" class="btn btn-outline-success" (click)="_updateExchangeRate()">Valider</button>
+              </div>
+            </div>
+           
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>

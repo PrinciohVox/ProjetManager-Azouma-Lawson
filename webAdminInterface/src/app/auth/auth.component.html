@@ -1,0 +1,17 @@
+<ngx-spinner bdColor="rgba(0,0,0,0.3)" size = "medium" color = "#00c851" type = "square-jelly-box" [fullScreen] = "true"><p style="color: white" > Authentification en cours ... </p></ngx-spinner>
+<div class="container-fluid">
+      <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-10 initailContainer">
+                  <div>
+                      <img src="assets/img/px.png" alt="">
+                  </div>
+                  <div>
+                        <input type="text" class="form-control" [(ngModel)]="login" placeholder="@email">
+                        <br>
+                        <input type="password" class="form-control" [(ngModel)]="password" placeholder="Mot de passe">
+                        <br>
+                        <button type="button" class="btn btn-success rounded-pill" (click)="_login()"><i class="fas fa-plug"></i>&nbsp;&nbsp;Connexion</button>
+                  </div>
+            </div>
+      </div>
+</div>

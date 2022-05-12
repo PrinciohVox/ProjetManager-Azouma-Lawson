@@ -1,0 +1,7 @@
+<ngx-spinner bdColor="rgba(0,0,0,0.3)" size = "medium" color = "#00c851" type = "square-jelly-box" [fullScreen] = "true"><p style="color: white" > Chargement en cours ... </p></ngx-spinner>
+<div class="container-fluid">
+  <app-breadcumb [path]="bread"></app-breadcumb>
+  <br><br>
+  <ng2-smart-table [settings]="settings" [source]="this.dataSource" (createConfirm)="_confirmCreate($event);" (deleteConfirm)="_confirmDelete($event)" (editConfirm)="_confirmUpdate($event)" (custom)="_customAction($event)"></ng2-smart-table>
+</div>
+

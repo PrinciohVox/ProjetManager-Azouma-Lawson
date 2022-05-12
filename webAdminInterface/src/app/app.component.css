@@ -1,0 +1,9 @@
+.principalView
+{
+  overflow-x: hidden;
+  min-height:100vh;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-right: 35px;
+  margin-right: 5px;
+}

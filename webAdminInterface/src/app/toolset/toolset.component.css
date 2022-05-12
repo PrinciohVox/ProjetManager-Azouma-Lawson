@@ -1,0 +1,79 @@
+.toolset_container
+{
+  width: 20%;
+  margin-top: 40px;
+  padding-left: 35px;
+  height: 95vh;
+  position: fixed;
+  background-color: black;
+}
+
+#accordionExample
+{
+  width: 97.5%;
+  margin-top: 60%;
+}
+
+#accordionExample *
+{
+  background-color: unset;
+  background-color: black;
+}
+
+#accordionExample .card button
+{
+  width: 100%;
+  font-size: 14px !important;
+  color: white;
+  text-decoration: unset;
+  transition: all .3s;
+}
+
+#accordionExample .card button:hover
+{
+  color:  #FF5722;
+}
+
+#accordionExample .card
+{
+  background-color: white !important;
+  border: unset;
+  font-size: 12px !important;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.card-header button
+{
+  padding: 0px !important;
+  text-align: left !important;
+}
+
+.card-header
+{
+  padding: 0px !important;
+}
+
+.card-body
+{
+  padding: 2px;
+}
+
+.card-body ul
+{
+  padding: 2px;
+  padding-left: 40px;
+}
+
+.card-body ul li
+{
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.card-body ul li:hover
+{
+  color:  #FF5722;
+}
+

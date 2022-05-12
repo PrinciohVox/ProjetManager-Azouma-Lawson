@@ -1,0 +1,30 @@
+.addBtn
+{
+  color: black !important;
+}
+
+.customerId
+{
+  text-align: center !important;
+}
+
+:host /deep/ ng2-smart-table {
+  font-size: 16px;
+}
+
+:host /deep/ ng2-smart-actions {
+  margin-top: 15px !important;
+}
+
+:host /deep/ ng2-smart-table i[class="fas fa-trash-alt"] {
+  color: #ff4444;
+}
+
+:host /deep/ ng2-smart-table i[class="fas fa-pen-fancy"] {
+  color: #00C851;
+}
+
+:host /deep/ ng2-smart-table i[class="fa-2x"] {
+  color: #00C851 !important;
+}
+

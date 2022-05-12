@@ -1,0 +1,77 @@
+<div class="container-fluid">
+  <div class="row d-flex justify-content-around">
+
+    <div class="col-md-5 d-flex align-items-center ninjamer_widget" style="background-color: rgb(184, 184, 58);color: white;" routerLink="/home/liste-demandes" routerLinkActive="router-link-active"
+
+    >
+          <div class="row">
+
+                <div class="col-6 d-flex justify-content-center widget_img align-items-center">
+                     <img src="assets/img/system.png" alt="">
+                </div>
+
+                <div class="col-6 d-flex justify-content-center align-items-center ninjamer_widget_text">
+                      <p>Liste des Compagnies</p>
+
+                      <p class="number"> {{ exchangesNumber }} </p>
+                </div>
+
+          </div>
+    </div>
+
+    <div class="col-md-5 d-flex align-items-center ninjamer_widget" style="background-color: rgb(187, 76, 181);color: white;" routerLink="/home/liste-utilisateurs-actifs">
+      <div class="row">
+
+            <div class="col-6 d-flex justify-content-center widget_img align-items-center">
+                 <img src="assets/img/pi.png" alt="">
+            </div>
+
+            <div class="col-6 d-flex justify-content-center align-items-center ninjamer_widget_text">
+                  <p>Liste des Projets </p>
+
+                  <p class="number">{{ userNumber }}</p>
+            </div>
+
+      </div>
+    </div>
+
+    <div class="col-md-5 d-flex align-items-center ninjamer_widget" style="background-color: #03a9f4;color: white;" routerLink="/home/liste-1xbet">
+      <div class="row">
+
+            <div class="col-6 d-flex justify-content-center widget_img align-items-center">
+                 <img src="assets/img/pt.png" alt="">
+            </div>
+
+            <div class="col-6 d-flex justify-content-center align-items-center ninjamer_widget_text">
+                  <p>Gestion des Taches </p>
+
+                  <p class="number">{{ xbetNumber }}</p>
+            </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+</div>
+<div>
+<br><br><br><br><br>
+  <div class="row d-flex justify-content-around">
+            <div class="col-5">
+                  <app-area-chart></app-area-chart>
+            </div>
+            <div class="col-5">
+                  <app-bubble-chart></app-bubble-chart>
+            </div>
+  </div>
+
+  <div class="row d-flex justify-content-around">
+            <div class="col-5">
+                  <app-pie-chart></app-pie-chart>
+            </div>
+      </div>
+
+</div>

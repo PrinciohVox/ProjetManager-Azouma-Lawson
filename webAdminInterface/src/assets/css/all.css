@@ -1,0 +1,33 @@
+.rotateOption
+{
+  animation: rotateOption .5s forwards;
+}
+
+.rotateOptionReverse
+{
+  animation: rotateOptionReverse .5s forwards;
+}
+
+@keyframes rotateOption
+{
+  from
+  {
+    transform: rotate(0deg);
+  }
+  to
+  {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotateOptionReverse
+{
+  from
+  {
+    transform: rotate(90deg);
+  }
+  to
+  {
+    transform: rotate(0deg);
+  }
+}
